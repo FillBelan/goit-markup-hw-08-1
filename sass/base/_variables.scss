@@ -1,0 +1,93 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-text-color: #2196F3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+
+    &-nav {
+            display: flex;
+            align-items: center;
+            height: 80px;
+        }
+}
+
+
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/*  цвет основного текстаbackground: #212121;  */
+/* вторичный текст цвета background: #757575; */
+/* белый #E5E5E5 */
+/* акцент background: #2196F3; */
+/* фон команды background: #F5F4FA; */
+/* ФОН СЕКЦИИ 1 background: #2F303A; */
+
+.logo {
+    color: var(--accent-text-color)
+}
