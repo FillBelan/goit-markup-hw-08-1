@@ -188,23 +188,62 @@ body {
 
 .hero {
   background-color: #2F303A;
-  height: 600px;
-  padding-top: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  height: 400px;
+  padding-top: 118px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-mobile.jpg);
+    height: 400px;
+    padding-top: 118px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-tablet.jpg);
+    height: 400px;
+    padding-top: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+    height: 600px;
+    padding-top: 200px;
+    max-width: 1600px;
+  }
 }
 .hero__title {
   color: #FFFFFF;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 21px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero__button {
   font-family: "Roboto";
@@ -216,7 +255,7 @@ body {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
-  padding: 10px 32px;
+  padding: 10px 24px;
   border-radius: 4px;
   border: 1px solid transparent;
   margin-top: 30px;
@@ -224,28 +263,103 @@ body {
   margin-right: auto;
   display: block;
 }
-
-.advanteges {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .hero__button {
+    padding: 10px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__button {
+    padding: 10px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    padding: 10px 32px;
+  }
 }
 
+.advanteges {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 480px) {
+  .advanteges {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advanteges {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advanteges {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.advanteges__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .advanteges__list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advanteges__list {
+    flex-wrap: wrap;
+  }
+}
 .advanteges__item {
-  width: 270px;
+  width: 320px;
+}
+@media screen and (min-width: 480px) {
+  .advanteges__item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advanteges__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advanteges__item {
+    width: 270px;
+  }
 }
 
 .advanteges__logo {
-  width: 270px;
+  width: 300px;
   height: 120px;
   background-color: #F5F4FA;
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
-
-.advanteges__list {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 480px) {
+  .advanteges__logo {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advanteges__logo {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advanteges__logo {
+    width: 270px;
+  }
 }
 
 .advanteges__title {
@@ -256,6 +370,22 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .advanteges__title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advanteges__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advanteges__title {
+    text-align: left;
+  }
 }
 
 .advanteges__text {
