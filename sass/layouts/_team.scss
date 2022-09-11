@@ -1,11 +1,28 @@
 .team {
     background-color: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+        @media screen and (min-width: 480px) {
+                padding-top: 60px;
+                    padding-bottom: 60px;
+            }
+        
+            @media screen and (min-width: 768px) {
+                padding-top: 60px;
+                    padding-bottom: 60px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                padding-top: 94px;
+                    padding-bottom: 94px;
+            }
 
     &__list {
         display: flex;
-        gap: 30px;
+        flex-wrap: wrap;
+        gap: 30px;  
+        justify-content: center;      
     }
 
     &__item {
@@ -15,6 +32,18 @@
             0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
+        width: 320px;
+
+            @media screen and (min-width: 480px) {
+                    width: 450px;}
+            
+                @media screen and (min-width: 768px) {
+                    width: 354px;
+                }
+            
+                @media screen and (min-width: 1200px) {
+                    width: 270px;
+                }
     }
 }
 
