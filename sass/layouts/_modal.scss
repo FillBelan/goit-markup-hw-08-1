@@ -22,8 +22,8 @@
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 320px;
+  height: 609px;
   top: 50%;
   left: 50%;
   background-color: #FFFFFF;
@@ -32,6 +32,20 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+   @media screen and (min-width: 480px) {
+        width: 450px;
+          height: 609px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+        height: 609px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+          height: 581px;
+    }
 
   &-btn {
     display: flex;
@@ -169,12 +183,27 @@
 
 .check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+    line-height: 14px;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
   align-items: center;
+    @media screen and (min-width: 480px) {
+        font-size: 12px;
+          line-height: 14px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        font-size: 12px;
+          line-height: 14px;
+      }
+    
+      @media screen and (min-width: 1200px) {
+      font-size: 14px;
+        line-height: 1.71;
+      }
+
 }
 
 .check-text span {
@@ -182,9 +211,7 @@
   height: 15px;
   border: 2px solid #212121;
   border-radius: 3px;
-  margin-left: 5px;
-  display: flex;
-  align-items: center;
+    align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 7px;
@@ -193,4 +220,5 @@
 .policy-link {
   color: var(--accent-text-color);
   margin-left: 3px;
+  display: inline-block;
 }

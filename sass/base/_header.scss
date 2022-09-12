@@ -13,14 +13,67 @@
         font-size: 26px;
         line-height: 1, 19;
         letter-spacing: 0.03em;
-        margin-right: 93px;
+    margin-right: 0;
+
+        @media screen and (min-width: 480px) {
+            margin-right: 0; }
+        
+            @media screen and (min-width: 768px) {
+            margin-right: 88px;
+            }
+        
+            @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+            }
     }
 
     &__list {
-        display: flex;
+        display: none;
         align-items: center;
         gap: 50px;
+
+        @media screen and (min-width: 480px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
     }
+
+    &__mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+       
+    }
+
+    &__mobile-btn {
+        border: none;
+        background-color: transparent;
+        margin-left: auto;
+        padding: 0;
+        margin-left: 276px;
+        display: block;
+
+            @media screen and (min-width: 480px) {
+                    display: block;
+                }
+            
+                @media screen and (min-width: 768px) {
+                    display: none;
+                }
+            
+                @media screen and (min-width: 1200px) {
+                    display: none;
+                }
+    
+            }
 }
 
 .navigation__link {

@@ -20,7 +20,7 @@
 <body>
     <header class="header">
 
-        <div class="mobile-nav">
+        <div class="mobile-nav is-hidden" data-menu>
             <ul class="mobile-nav__list list">
                 <li class="mobile-nav__item"><a href="./index.html" class="mobile-nav__link link">Студия</a>
                 </li>
@@ -29,7 +29,7 @@
                 <li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Контакты</a></li>
             </ul>
 
-            <button type="button" class="mobile-nav__btn"><svg class="close-svg" wigth="19" height="19">
+            <button type="button" class="mobile-nav__btn" data-menu-close><svg class="close-svg" width="19" height="19">
                     <use href="./images/symbol-defs.svg#icon-close-button-x"></use>
                 </svg></button>
 
@@ -45,10 +45,10 @@
                 </div>
                 <div class="mobile-nav__soc">
                     <ul class="mobile-nav__soc-list list">
-                        <li><a href="" class="mobile-nav__soc-link link">Instagram</a></li>
-                        <li><a href="" class="mobile-nav__soc-link link">Twitter</a></li>
-                        <li><a href="" class="mobile-nav__soc-link link">Facebook</a></li>
-                        <li><a href="" class="mobile-nav__soc-link link">LinkedIn</a></li>
+                        <li class="mobile-nav_soc-item"><a href="" class="mobile-nav__soc-link link">Instagram</a><span class="mobile-nav_line"></span></li>
+                        <li class="mobile-nav_soc-item"><a href="" class="mobile-nav__soc-link link">Twitter</a><span class="mobile-nav_line"></span></li>
+                        <li class="mobile-nav_soc-item"><a href="" class="mobile-nav__soc-link link">Facebook</a><span class="mobile-nav_line"></span></li>
+                        <li class="mobile-nav_soc-item"><a href="" class="mobile-nav__soc-link link">LinkedIn</a></li>
                     </ul>
 
                 </div>
@@ -59,8 +59,12 @@
         </div>
         <div class="container container-nav">
             <nav class="navigation">
-                <a href="./index.html" lang="en" class="logo navigation__logo link"><span
-                        class="logo">Web</span>Studio</a>
+                <div class="navigation__mobile-menu">
+                   <a href="./index.html" lang="en" class="navigation__logo link"><span class="logo">Web</span>Studio</a>
+                <button type="button" class="navigation__mobile-btn" data-menu-open><svg class="" width="40px" heigth="40px">
+                        <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                    </svg></button>
+                </div>
                 <ul class="navigation__list list">
                     <li class="navigation__item"><a href="./index.html" class="navigation__link current link">Студия</a>
                     </li>
@@ -415,7 +419,7 @@
                         <span><svg class="policy-svg" width="11" height="8">
                                 <use href="./images/symbol-defs.svg#icon-Vector-1"></use>
                             </svg></span>
-                        Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link">Условия договора </a>
+                       Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link">Условия договора </a>
 
                     </label>
 
@@ -425,6 +429,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
