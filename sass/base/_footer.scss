@@ -5,6 +5,23 @@
 
     &-display {
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+
+        @media screen and (min-width: 480px) {
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
+
     }
 
     &-logo {
@@ -15,6 +32,7 @@
         font-size: 26px;
         line-height: 31px;
         letter-spacing: 0.03em;
+
     }
 
     &-adress {
@@ -23,6 +41,19 @@
 
     &-item {
         margin-top: 9px;
+        text-align: center;
+
+        @media screen and (min-width: 480px) {
+            text-align: center;
+        }
+
+        @media screen and (min-width: 768px) {
+            text-align: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
     }
 
     &-map,
@@ -51,8 +82,23 @@
     }
 
     &-join-soc {
-        margin-left: 70px;
-        margin-top: 12px;
+        margin-left: 0;
+        margin-top: 0;
+
+        @media screen and (min-width: 480px) {
+            margin-left: 0;
+            margin-top: 0;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-left: 105px;
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 33px;
+            margin-top: 12px;
+        }
     }
 
     &-title,
@@ -64,6 +110,19 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        text-align: center;
+
+        @media screen and (min-width: 480px) {
+            text-align: center;
+        }
+
+        @media screen and (min-width: 768px) {
+            text-align: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
     }
 }
 
