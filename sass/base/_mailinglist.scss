@@ -46,21 +46,23 @@
     &-form {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        // justify-content: center;
         align-items: center;
         gap: 20px;
 
         @media screen and (min-width: 480px) {
-            flex-wrap: wrap;
+        gap: 20px;
         }
 
         @media screen and (min-width: 768px) {
+            gap: 20px;
             flex-direction: column;
         }
 
         @media screen and (min-width: 1200px) {
-            flex-wrap: nowrap;
-        }
+            gap: 12px;
+            flex-direction: row;
+                }
 
     }
 
@@ -73,7 +75,7 @@
 }
 
 .button-signin {
-    margin-left: 12px;
+    
     width: 200px;
     height: 50px;
     background-color: var(--accent-text-color);
@@ -91,4 +93,6 @@
     gap: 10px;
     align-items: center;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
 }
