@@ -27,19 +27,10 @@
     align-items: center;
     gap: 30px;
 
-    @media screen and (min-width: 480px) {
-        flex-wrap: wrap;
-    }
-
-    @media screen and (min-width: 768px) {
-        flex-wrap: wrap;
-    }
-
-    @media screen and (min-width: 1200px) {}
 }
 
 .advanteges__item {
-    width: 320px;
+    width: 100%;
 
     @media screen and (min-width: 480px) {
         width: 450px;
@@ -55,7 +46,7 @@
 }
 
 .advanteges__logo {
-    width: 300px;
+    width: 100%;
     height: 120px;
     background-color: #F5F4FA;
     display: flex;

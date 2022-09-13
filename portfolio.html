@@ -18,17 +18,65 @@
   </head>
 
 <body>
-    <header class="header">
-        <div class="container container-nav">
-            <nav class="navigation">
-                <a href="./index.html" lang="en" class="logo navigation__logo link"><span class="logo">Web</span>Studio</a>
-                <ul class="navigation__list list">
-                    <li class="navigation__item"><a href="./index.html" class="navigation__link link">Студия</a>
-                    </li>
-                    <li class="navigation__item"><a href="./portfolio.html" class="navigation__link current link">Портфолио</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link link">Контакты</a></li>
+<header class="header">
+
+    <div class="mobile-nav is-hidden" data-menu>
+        <ul class="mobile-nav__list list">
+            <li class="mobile-nav__item"><a href="./index.html" class="mobile-nav__link link">Студия</a>
+            </li>
+            <li class="mobile-nav__item"><a href="./portfolio.html" class="mobile-nav__link link">Портфолио</a>
+            </li>
+            <li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Контакты</a></li>
+        </ul>
+
+        <button type="button" class="mobile-nav__btn" data-menu-close><svg class="close-svg" width="19" height="19">
+                <use href="./images/symbol-defs.svg#icon-close-button-x"></use>
+            </svg></button>
+
+        <div class="mobile-nav__contacts">
+            <div class="mobile-nav__connects">
+
+                <a href="tel:+380961111111" class="mobile-nav__tel link">
+                    +38 096 111 11 11</a>
+                <a href="maito:info@devstudio.com" class="mobile-nav__mail link">
+                    info@devstudio.com</a>
+
+
+            </div>
+            <div class="mobile-nav__soc">
+                <ul class="mobile-nav__soc-list list">
+                    <li class="mobile-nav_soc-item"><a href="" class="mobile-nav__soc-link link">Instagram</a><span
+                            class="mobile-nav_line"></span></li>
+                    <li class="mobile-nav_soc-item"><a href="" class="mobile-nav__soc-link link">Twitter</a><span
+                            class="mobile-nav_line"></span></li>
+                    <li class="mobile-nav_soc-item"><a href="" class="mobile-nav__soc-link link">Facebook</a><span
+                            class="mobile-nav_line"></span></li>
+                    <li class="mobile-nav_soc-item"><a href="" class="mobile-nav__soc-link link">LinkedIn</a></li>
                 </ul>
-            </nav>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="container">
+        <nav class="navigation">
+
+            <a href="./index.html" lang="en" class="navigation__logo link"><span class="logo">Web</span>Studio</a>
+            <button type="button" class="navigation__mobile-btn" data-menu-open><svg class="" width="40px"
+                    heigth="40px">
+                    <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                </svg></button>
+
+            <ul class="navigation__list list">
+                <li class="navigation__item"><a href="./index.html" class="navigation__link current link">Студия</a>
+                </li>
+                <li class="navigation__item"><a href="./portfolio.html" class="navigation__link link">Портфолио</a>
+                </li>
+                <li class="navigation__item"><a href="" class="navigation__link link">Контакты</a></li>
+            </ul>
+
             <ul class="contacts  list">
                 <li class="contacts__item"><a href="maito:info@devstudio.com" class="contacts__link link"> <svg
                             class="contacts__icon-svg" width="16" height="12">
@@ -40,8 +88,9 @@
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
-        </div>
-    </header>
+        </nav>
+    </div>
+</header>
     <main>
         <section class="portfolio">
             <div class="container">

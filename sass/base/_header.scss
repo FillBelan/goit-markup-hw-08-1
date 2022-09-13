@@ -4,6 +4,8 @@
 
 .navigation {
     display: flex;
+        align-items: center;
+        height: 80px;
 
     &__logo {
         color: var(--title-text-color);
@@ -11,7 +13,7 @@
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
-        line-height: 1, 19;
+        line-height: 1.19;
         letter-spacing: 0.03em;
     margin-right: 0;
 
@@ -45,21 +47,15 @@
         }
     }
 
-    &__mobile-menu {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        
-       
-    }
+
 
     &__mobile-btn {
         border: none;
         background-color: transparent;
         margin-left: auto;
         padding: 0;
-        margin-left: 276px;
-        display: block;
+        
+
 
             @media screen and (min-width: 480px) {
                     display: block;
