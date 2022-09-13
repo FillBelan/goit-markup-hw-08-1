@@ -373,8 +373,8 @@ body {
   margin: 0 auto;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero .hero {
-    background-image: url("../images/img@2x.jpg");
+  .hero {
+    background-image: url("../images/Img@2x.jpg");
   }
 }
 @media screen and (min-width: 480px) {
@@ -384,11 +384,21 @@ body {
     padding-top: 118px;
   }
 }
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/Img@2x.jpg");
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-tablet.jpg);
     height: 400px;
     padding-top: 118px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/Img@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -397,6 +407,11 @@ body {
     height: 600px;
     padding-top: 200px;
     max-width: 1600px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/Img@2x.jpg");
   }
 }
 .hero__title {
@@ -724,11 +739,35 @@ body {
 .working__title {
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .team__main,
+.working__title {
+    font-size: 28px;
+    line-height: 1.17;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__main,
+.working__title {
+    font-size: 28px;
+    line-height: 1.17;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__main,
+.working__title {
+    font-size: 44px;
+    line-height: 1.36;
+    margin-bottom: 50px;
+  }
 }
 
 .description__link:hover .description__icon,
@@ -766,6 +805,27 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 480px) {
+  .customers-title {
+    font-size: 28px;
+    line-height: 1.17;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers-title {
+    font-size: 28px;
+    line-height: 1.17;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers-title {
+    font-size: 44px;
+    line-height: 1.36;
+    margin-bottom: 50px;
+  }
 }
 .customers-list {
   display: flex;
@@ -811,8 +871,26 @@ body {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 480px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
 }
 
 .portfolio-list {
@@ -864,7 +942,22 @@ body {
 }
 
 .projects {
-  margin-top: 50px;
+  margin-top: 40px;
+}
+@media screen and (min-width: 480px) {
+  .projects {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects {
+    margin-top: 50px;
+  }
 }
 
 .portfolio-projeсts {
@@ -987,6 +1080,21 @@ body {
   letter-spacing: 0.03em;
   margin: 0;
   padding-left: 37px;
+}
+@media screen and (min-width: 480px) {
+  .footer-logo {
+    padding-left: 37px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    padding-left: 37px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    padding-left: 0px;
+  }
 }
 .footer-adress {
   margin-top: 20px;

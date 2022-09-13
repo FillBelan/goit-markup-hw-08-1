@@ -1,6 +1,22 @@
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: 480px) {
+            padding-top: 60px;
+                padding-bottom: 40px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            padding-top: 60px;
+                padding-bottom: 60px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+                padding-bottom: 50px;
+    
+        }
 }
 
 .portfolio-list {
@@ -50,7 +66,18 @@
 }
 
 .projects {
-    margin-top: 50px;
+    margin-top: 40px;
+    @media screen and (min-width: 480px) {
+            margin-top: 40px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            margin-top: 30px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-top: 50px;
+        }
 }
 
 .portfolio-projeсts {

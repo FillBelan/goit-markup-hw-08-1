@@ -3,26 +3,26 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-        @media screen and (min-width: 480px) {
-                padding-top: 60px;
-                    padding-bottom: 60px;
-            }
-        
-            @media screen and (min-width: 768px) {
-                padding-top: 60px;
-                    padding-bottom: 60px;
-            }
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
-            @media screen and (min-width: 1200px) {
-                padding-top: 94px;
-                    padding-bottom: 94px;
-            }
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &__list {
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;  
-        justify-content: center;      
+        gap: 30px;
+        justify-content: center;
     }
 
     &__item {
@@ -34,16 +34,17 @@
         border-radius: 0px 0px 4px 4px;
         width: 320px;
 
-            @media screen and (min-width: 480px) {
-                    width: 450px;}
-            
-                @media screen and (min-width: 768px) {
-                    width: 354px;
-                }
-            
-                @media screen and (min-width: 1200px) {
-                    width: 270px;
-                }
+        @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
     }
 }
 
@@ -101,11 +102,32 @@
 .working__title {
     color: var(--title-text-color);
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
+
+    @media screen and (min-width: 480px) {
+        font-size: 28px;
+        line-height: 1.17;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 28px;
+        line-height: 1.17;
+        margin-bottom: 30px;
+    }
+
+
+
+@media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    margin-bottom: 50px;
+
+}
 }
 
 
